@@ -46,4 +46,11 @@ def executar_analise_densidade() -> None:
         print('Divisão por zero impede o cálculo da densidade')
 
     else:
-        print(f'\n[SUCESSO]: Densidade ')
+        print(f'\n[SUCESSO]: Densidade do material: {densidade:.2f} em kg/m³')
+    finally:
+        print('----Encerrando o ensaio----')
+
+    #principal 
+    while True:
+        executar_analise_densidade()
+        print('\n')
